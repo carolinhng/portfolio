@@ -1,0 +1,21 @@
+<header>
+    <nav class="navbar d-flex justify-content-between align-items-center">
+
+        <div>
+          <%= link_to root_path do %>
+            <%= image_tag "logo.png" %>
+          <% end %>
+        </div>
+
+        <div>
+          <%= link_to "Qui suis-je ?", {anchor: "profil"} %>
+          <%= link_to "Expériences", {anchor: "experiences"}, class:"margin-left" %>
+          <%= link_to "Compétences", {anchor: "competences"}, class:"margin-left" %>
+          <%= link_to "Projets", {anchor: "projets"}, class:"margin-left" %>
+          <%= link_to "Contact", {anchor: "contact"}, class:"margin-left" %>
+          <%= link_to "CV", download_pdf_path, class:"margin-left cv" %>
+        </div>
+
+    </nav>
+
+</header>

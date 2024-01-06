@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
-  def home
+  def download_pdf
+    send_file "#{Rails.root}/public/cv.pdf", type: "application/pdf", x_sendfile: true
   end
 end
