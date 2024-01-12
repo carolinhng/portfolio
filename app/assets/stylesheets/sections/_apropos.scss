@@ -1,11 +1,30 @@
-.height-100vh {
-  height: 99vh;
-}
-
 .padding-70 {
   padding: 70px 0px;
 }
 
 .text-justify {
   text-align: justify;
+}
+
+.background-darkblue {
+  background-color: $bleumarine;
+}
+
+.background-bluegreen {
+  background-color: $bleuvert;
+}
+
+.card {
+  text-align: center;
+  padding: 40px;
+  color: white;
+  i {
+    font-size: 40px;
+    padding-bottom: 15px;
+  }
+}
+
+.grid-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
