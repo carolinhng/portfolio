@@ -14,3 +14,21 @@ body {
 .bold {
   font-weight: 700;
 }
+
+.hover:hover {
+  background-color: $bleuvertfonce;
+  transition: 0.4s;
+}
+
+.container-section {
+  width: 1200px;
+  margin: auto;
+}
+
+.background-white {
+  background-color: $white;
+}
+
+.color-black {
+  color: black;
+}
