@@ -4,27 +4,39 @@
 
     <h2 class="mb-5">Mes expériences</h2>
 
-    <div class="dis-flex">
+
+    <div class="dis-flex" id="experiences" data-controller="expechange">
+
 
       <div class="border-left">
 
-        <div class="click-on">
+        <div class="click-on"
+             data-action="click->expechange#classChangeOne"
+             data-expechange-target="elementOne">
           <h4>INDEPENDANTE</h4>
         </div>
 
-        <div class="click-off">
+        <div class="click-off"
+             data-action="click->expechange#classChangeTwo"
+             data-expechange-target="elementTwo">
           <h4>INTERIM</h4>
         </div>
 
-        <div class="click-off">
+        <div class="click-off"
+             data-action="click->expechange#classChangeThree"
+             data-expechange-target="elementThree">
           <h4>E. LECLERC</h4>
         </div>
 
-        <div class="click-off">
+        <div class="click-off"
+             data-action="click->expechange#classChangeFour"
+             data-expechange-target="elementFour">
           <h4>QUINTESSENCE</h4>
         </div>
 
-        <div class="click-off">
+        <div class="click-off"
+             data-action="click->expechange#classChangeFive"
+             data-expechange-target="elementFive">
           <h4>ECP - ABORAL</h4>
         </div>
 
@@ -32,7 +44,6 @@
 
 
       <div>
-
         <h3 class="mb-3 bold color-blue">AUTO-ENTREPRENEUSE</h3>
         <h5 class="mb-3 color-bluegreen">Septembre 2021 - Août 2023</h5>
           <ul class="list">
@@ -42,14 +53,7 @@
             <li class="mb-2"><i class="fa-solid fa-angles-right" style="color: #67decc;"></i> Communication web et ADS.</li>
             <li class="mb-2"><i class="fa-solid fa-angles-right" style="color: #67decc;"></i> Suivi et gestion des commandes, paiements et livraisons.</li>
             <li class="mb-2"><i class="fa-solid fa-angles-right" style="color: #67decc;"></i> Administratif et comptabilité.</li>
-
-
           </ul>
-
-
-
-
-
       </div>
 
 
