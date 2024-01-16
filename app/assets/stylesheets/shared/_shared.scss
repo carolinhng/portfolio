@@ -33,3 +33,28 @@ body {
 .color-black {
   color: black;
 }
+
+.color-blue {
+  color: $bleumarine;
+}
+
+.color-bluegreen {
+  color: $bleuvert;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h5 {
+  font-size: 18px;
+}
