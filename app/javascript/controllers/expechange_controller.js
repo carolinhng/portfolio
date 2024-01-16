@@ -11,14 +11,21 @@ export default class extends Controller {
   classChangeOne() {
     console.log(this.elementOneTarget)
     if (this.elementOneTarget.classList.contains("click-on")) {
-      
+
     } else {
-      this.elementOneTarget.classList.add("click-off")
+      this.elementOneTarget.classList.remove("click-off")
+      this.elementOneTarget.classList.add("click-on")
     }
   }
 
   classChangeTwo() {
     console.log(this.elementTwoTarget)
+    if (this.elementTwoTarget.classList.contains("click-on")) {
+
+    } else {
+      this.elementTwoTarget.classList.remove("click-off")
+      this.elementTwoTarget.classList.add("click-on")
+    }
   }
 
   classChangeThree() {
