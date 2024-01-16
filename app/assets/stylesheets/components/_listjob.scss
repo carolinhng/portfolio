@@ -1,0 +1,25 @@
+.border-left {
+  border-left: 1px solid;
+}
+
+.click-on {
+  padding: 20px;
+  background-color: $vertfade;
+  width: 200px;
+  h4 {
+    color: $bleumarine;
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    font-weight: 700;
+  }
+}
+
+.click-off {
+  padding: 20px;
+  h4 {
+    color: $bleuvert;
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+    font-weight: 700;
+  }
+}
