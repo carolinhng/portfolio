@@ -15,6 +15,7 @@ export default class extends Controller {
     } else {
       this.elementOneTarget.classList.remove("click-off")
       this.elementOneTarget.classList.add("click-on")
+
     }
   }
 
@@ -25,6 +26,12 @@ export default class extends Controller {
     } else {
       this.elementTwoTarget.classList.remove("click-off")
       this.elementTwoTarget.classList.add("click-on")
+
+      this.elementOneTarget.classList.remove("click-on")
+      this.elementThreeTarget.classList.remove("click-on")
+      this.elementFourTarget.classList.remove("click-on")
+      this.elementFiveTarget.classList.remove("click-on")
+      this.elementOneTarget.classList.remove("click-on")
     }
   }
 
