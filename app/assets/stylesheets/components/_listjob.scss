@@ -28,7 +28,20 @@
     background-color: $vertfade;
     border-left: 4px solid $bleuvert;
   }
+
+  &:focus {
+    padding: 20px;
+    background-color: $vertfade;
+    width: 200px;
+    border-left: 4px solid $bleuvert;
+    h4 {
+      color: $bleumarine;
+      margin-bottom: 0px;
+      font-weight: 700;
+    }
+  }
 }
+
 
 .list {
   list-style-type: none;

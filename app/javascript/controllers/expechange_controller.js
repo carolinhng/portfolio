@@ -3,49 +3,29 @@ import { Controller } from "@hotwired/stimulus"
 // Connects to data-controller="expechange"
 export default class extends Controller {
 
-  static targets = ["elementOne", "elementTwo", "elementThree", "elementFour", "elementFive"]
+  static targets = ["elements", "resume"]
 
   connect() {
+    console.log(this.elementsTargets)
   }
 
-  classChangeOne() {
-    console.log(this.elementOneTarget)
-    if (this.elementOneTarget.classList.contains("click-on")) {
+  classChange() {
+    console.log(this.elementsTargets)
 
-    } else {
-      this.elementOneTarget.classList.remove("click-off")
-      this.elementOneTarget.classList.add("click-on")
-
-    }
+    this.elementsTargets.forEach(target => {
+      if (target.classList.contains("click-on")) {
+        this.resumeTarget.innerHTML = `<%= render "sections/banner" %>`;
+        // target.classList.remove("btn-danger");
+        // target.classList.add("btn-success")
+      }
+      else {
+        target.innerHTML = `<i class="fa-solid fa-bolt"></i> Rendre mon jeu disponible`
+        target.classList.remove("btn-success")
+        target.classList.add("btn-danger")
+      }
+    });
   }
 
-  classChangeTwo() {
-    console.log(this.elementTwoTarget)
-    if (this.elementTwoTarget.classList.contains("click-on")) {
-
-    } else {
-      this.elementTwoTarget.classList.remove("click-off")
-      this.elementTwoTarget.classList.add("click-on")
-
-      this.elementOneTarget.classList.remove("click-on")
-      this.elementThreeTarget.classList.remove("click-on")
-      this.elementFourTarget.classList.remove("click-on")
-      this.elementFiveTarget.classList.remove("click-on")
-      this.elementOneTarget.classList.remove("click-on")
-    }
-  }
-
-  classChangeThree() {
-    console.log(this.elementThreeTarget)
-  }
-
-  classChangeFour() {
-    console.log(this.elementFourTarget)
-  }
-
-  classChangeFive() {
-    console.log(this.elementFiveTarget)
-  }
 
 
 }
