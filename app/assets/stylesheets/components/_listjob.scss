@@ -14,6 +14,7 @@
   }
   &:hover {
     background-color: #b7f9ed;
+    transition: 0.4s;
   }
 }
 
@@ -27,6 +28,7 @@
   &:hover {
     background-color: $vertfade;
     border-left: 4px solid $bleuvert;
+    transition: 0.3s;
   }
 
   &:focus {
@@ -34,6 +36,7 @@
     background-color: $vertfade;
     width: 200px;
     border-left: 4px solid $bleuvert;
+    transition: 0.3s;
     h4 {
       color: $bleumarine;
       margin-bottom: 0px;
