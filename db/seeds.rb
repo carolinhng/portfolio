@@ -1,4 +1,4 @@
-# Test gitignore
+# test 2
 
 ProjectTechno.destroy_all
 Techno.destroy_all
