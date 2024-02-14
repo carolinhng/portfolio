@@ -2,6 +2,10 @@
   border-left: 1px solid;
 }
 
+
+
+
+
 .click-on {
   padding: 20px;
   background-color: $vertfade;
@@ -9,7 +13,6 @@
   border-left: 4px solid $bleuvert;
   h4 {
     color: $bleumarine;
-    margin-bottom: 0px;
     font-weight: 700;
   }
   &:hover {
@@ -22,7 +25,6 @@
   padding: 20px;
   h4 {
     color: $bleuvert;
-    margin-bottom: 0px;
     font-weight: 700;
   }
   &:hover {
@@ -39,7 +41,6 @@
     transition: 0.3s;
     h4 {
       color: $bleumarine;
-      margin-bottom: 0px;
       font-weight: 700;
     }
   }
@@ -47,9 +48,9 @@
 
 
 .list {
-  list-style-type: none;
   padding-left: 0px;
-  font-size: 18px;
+  // font-size: 18px;
+  font-size: calc(13px + 0.3vw);
 }
 
 .dis-flex {
@@ -58,7 +59,38 @@
   align-items: center;
 }
 
-.color-blue-size {
-  font-size: 1.5rem;
-  color: $bleumarine;
+@media (max-width: 1300px) {
+  .dis-flex {
+    gap: 150px;
+  }
+}
+
+@media (max-width: 935px) {
+  .dis-flex {
+    gap: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  .dis-flex {
+    gap: 50px;
+  }
+}
+
+
+// version mobile
+@media (max-width: 650px) {
+  .dis-flex-column {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .border-left {
+    border-bottom: 1px solid;
+    border-left: none;
+  }
+
+  .dis-flex {
+    flex-direction: column;
+  }
 }

@@ -1,10 +1,32 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  h1, h2, h3, h4, h5, p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 body {
   // background-color: #071C42;
   background: radial-gradient(circle, rgba(7,28,66,1) 14%, rgb(7, 35, 85) 51%, rgba(7,28,66,1) 90%);
   color: $white;
 
   p {
-    font-size: 18px;
+    font-size: calc(13px + 0.3vw);
   }
 }
 
@@ -19,11 +41,6 @@ body {
 .hover:hover {
   background-color: $bleuvertfonce;
   transition: 0.4s;
-}
-
-.container-section {
-  width: 1200px;
-  margin: auto;
 }
 
 .background-white {
@@ -42,19 +59,24 @@ body {
   color: $bleuvert;
 }
 
+
 h2 {
-  font-size: 35px;
+  // font-size: 35px;
+  font-size: calc(31px + 0.3vw);
   font-weight: 700;
 }
 
 h3 {
-  font-size: 24px;
+  // font-size: 24px;
+  font-size: calc(20px + 0.3vw);
 }
 
 h4 {
-  font-size: 20px;
+  // font-size: 20px;
+  font-size: calc(16px + 0.3vw);
 }
 
 h5 {
-  font-size: 18px;
+  // font-size: 18px;
+  font-size: calc(14px + 0.3vw);
 }

@@ -1,16 +1,44 @@
 .padding-70 {
-  padding: 70px 0px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .text-justify {
   text-align: justify;
 }
 
-.background-darkblue {
+.flex-gap-5 {
+  display: flex;
+  gap: 40px;
+}
+
+@media (max-width: 650px) {
+  .flex-gap-5 {
+    display: block;
+  }
+
+  .padding-70 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+
+
+
+// cards hobbies
+
+
+.grid-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card-one, .card-three {
   background: radial-gradient(circle, rgba(7,28,66,1) 14%, rgb(7, 32, 76) 51%, rgba(7,28,66,1) 90%);
 }
 
-.background-bluegreen {
+.card-two, .card-four {
   background-color: $bleuvert;
 }
 
@@ -24,7 +52,43 @@
   }
 }
 
-.grid-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+// Format mobile
+@media (max-width: 903px) {
+  .grid-card {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-one, .card-four {
+    background: radial-gradient(circle, rgba(7,28,66,1) 14%, rgb(7, 32, 76) 51%, rgba(7,28,66,1) 90%);
+  }
+
+  .card-two, .card-three {
+    background: $bleuvert;
+  }
+
+  .card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .grid-card {
+    display: block;
+  }
+
+  .card-one, .card-three {
+    background: radial-gradient(circle, rgba(7,28,66,1) 14%, rgb(7, 32, 76) 51%, rgba(7,28,66,1) 90%);
+  }
+
+  .card-two, .card-four {
+    background: $bleuvert;
+  }
+
+  .card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
 }

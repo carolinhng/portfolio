@@ -1,0 +1,32 @@
+<header data-controller="togglemenu">
+
+    <nav class="navbar">
+
+        <div>
+          <%= link_to root_path do %>
+            <%= image_tag "caro.jpg" %>
+          <% end %>
+        </div>
+
+        <div class="nav-links" data-togglemenu-target="links">
+          <ul class="d-flex">
+            <li><%= link_to "Qui suis-je ?", {anchor: "profil"}, class: "link-nav" %></li>
+            <li><%= link_to "Expériences", {anchor: "experiences"}, class:"margin-left link-nav" %></li>
+            <li><%= link_to "Compétences", {anchor: "competences"}, class:"margin-left link-nav" %></li>
+            <li><%= link_to "Projets", {anchor: "projets"}, class:"margin-left link-nav" %></li>
+            <li><%= link_to "Contact", {anchor: "contact"}, class:"margin-left link-nav" %></li>
+            <% if user_signed_in? %>
+              <li><%= link_to "Profil", edit_user_registration_path, class: "margin-left link-nav" %></li>
+              <li><%= link_to "Déconnexion", destroy_user_session_path, data: { turbo_method: :delete }, class: "margin-left link-nav"%></li>
+            <% else %>
+              <li><%= link_to "Connexion", new_user_session_path, class: "margin-left link-nav"  %></li>
+            <% end %>
+            <li><%= link_to "CV", download_pdf_path, class:"margin-left cv hover" %></li>
+          </ul>
+        </div>
+
+        <i class="fa-solid fa-bars menu-hamburger" style="color: #3dcab1;" data-action="click->togglemenu#toggle"></i>
+
+    </nav>
+
+</header>
