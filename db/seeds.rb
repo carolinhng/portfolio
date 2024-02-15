@@ -1,5 +1,3 @@
-# test 2
-
 ProjectTechno.destroy_all
 Techno.destroy_all
 Project.destroy_all

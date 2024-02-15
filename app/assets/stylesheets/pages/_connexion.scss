@@ -1,0 +1,51 @@
+.card-connexion {
+  background-color: rgba(255, 255, 255, 0.137);
+  width: 900px;
+  height: 450px;
+  text-align: center;
+  // box-shadow: 0 10px 20px rgba(65, 65, 65, 0.438);
+}
+
+
+.border-none {
+  border: none;
+}
+
+.card-white {
+  background-color: white;
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+  color: black;
+}
+
+.card-avatar {
+  width: 35%;
+}
+
+.form-check {
+  text-align: start;
+}
+
+// Format mobile
+@media (max-width: 650px) {
+  .card-connexion {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .card-avatar {
+    width: 100%;
+    height: 25%;
+  }
+
+
+
+  .card-white {
+    height: 75%;
+    width: 100%;
+  }
+}

@@ -4,7 +4,7 @@
 
 
 <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
-  <%= link_to "Mot de passe oublié ?", new_password_path(resource_name) %><br />
+  <%= link_to "Mot de passe oublié ?", new_password_path(resource_name), class: "link-connex"%><br />
 <% end %>
 
 <%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>

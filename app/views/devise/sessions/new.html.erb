@@ -1,27 +1,49 @@
 
-<div class="container-section">
+<div class="height-100vh display-flex justify-content-center align-item-center">
 
-<h2>Connexion</h2>
+  <div class="display-flex card-connexion justify-space-between align-item-center">
 
-<%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="form-inputs">
-    <%= f.input :email,
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
-    <%= f.input :password,
-                required: false,
-                label: "Mot de passe",
-                input_html: { autocomplete: "current-password" } %>
-    <%= f.input :remember_me, label: "Se souvenir de moi", as: :boolean if devise_mapping.rememberable? %>
+
+    <div class="card-avatar">
+      <%= image_tag "caro.jpg", class: "avatar avatar-bordered avatar-grand" %>
+    </div>
+
+
+
+    <div class="card-white">
+      <h2 class="text-align-center mb-5">Connexion</h2>
+
+      <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="form-inputs">
+          <%= f.input :email,
+                      required: false,
+                      autofocus: true,
+                      label: false,
+                      placeholder: "email",
+                      input_html: { autocomplete: "email" } %>
+          <%= f.input :password,
+                      required: false,
+                      label: false,
+                      placeholder: "Mot de passe",
+                      input_html: { autocomplete: "current-password" } %>
+          <%= f.input :remember_me,
+                      label: "Se souvenir de moi",
+                      class: "text-align-start",
+                      as: :boolean if devise_mapping.rememberable? %>
+        </div>
+
+
+        <div class="form-actions">
+          <%= f.button :submit, "Se connecter", class: "button hover border-none mb-4" %>
+        </div>
+      <% end %>
+
+      <%= render "devise/shared/linklogin"%>
+    </div>
+
+
+
+
   </div>
-
-
-  <div class="form-actions">
-    <%= f.button :submit, "Se connecter", class: "button hover" %>
-  </div>
-<% end %>
-
-<%= render "devise/shared/linklogin" %>
 
 </div>

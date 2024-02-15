@@ -21,7 +21,6 @@
 }
 
 body {
-  // background-color: #071C42;
   background: radial-gradient(circle, rgba(7,28,66,1) 14%, rgb(7, 35, 85) 51%, rgba(7,28,66,1) 90%);
   color: $white;
 
@@ -79,4 +78,37 @@ h4 {
 h5 {
   // font-size: 18px;
   font-size: calc(14px + 0.3vw);
+}
+
+
+
+
+.display-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.height-100vh {
+  height: 100vh;
+}
+
+
+.link-connex {
+  color: $bleuvert;
+
+    &:hover {
+      color: $bleumarine;
+      transition: 0.7s;
+    }
 }
