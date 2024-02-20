@@ -23,12 +23,16 @@
           <%= f.input :email,
                       required: true,
                       autofocus: true,
+                      label: false,
+                      placeholder: "email",
                       input_html: { autocomplete: "email" } %>
         </div>
 
+
         <div class="form-actions">
-          <%= f.button :submit, "Envoyez le mail de réinitialisation" %>
+          <%= f.button :submit, "Envoyez le mail de réinitialisation", class: "button hover border-none mb-4" %>
         </div>
+
       <% end %>
 
       <%= render "devise/shared/links" %>

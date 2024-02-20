@@ -3,12 +3,9 @@
 
   <div class="display-flex card-connexion justify-space-between align-item-center">
 
-
     <div class="card-avatar">
       <%= image_tag "caro.jpg", class: "avatar avatar-bordered avatar-grand" %>
     </div>
-
-
 
 
     <div class="card-white">
@@ -38,19 +35,18 @@
                       as: :boolean if devise_mapping.rememberable? %>
         </div>
 
-
         <div class="form-actions">
           <%= f.button :submit, "Se connecter", class: "button hover border-none mb-4" %>
         </div>
+
       <% end %>
 
-
-        <%= render "devise/shared/linklogin" %>
-        <%= link_to root_path do %>
-          <div class="link">
-            <i class="fa-solid fa-arrow-left" style="color: #3dcab1;"></i> Revenir à l'accueil
-          </div>
-        <% end %>
+      <%= render "devise/shared/linklogin" %>
+      <%= link_to root_path do %>
+        <div class="link">
+          <i class="fa-solid fa-arrow-left" style="color: #3dcab1;"></i> Revenir à l'accueil
+        </div>
+      <% end %>
 
     </div>
 
