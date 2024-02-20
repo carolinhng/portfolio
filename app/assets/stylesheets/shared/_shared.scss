@@ -104,11 +104,15 @@ h5 {
 }
 
 
-.link-connex {
+.link {
   color: $bleuvert;
 
     &:hover {
       color: $bleumarine;
       transition: 0.7s;
     }
+}
+
+.margin-neg {
+  margin-bottom: -20px;
 }

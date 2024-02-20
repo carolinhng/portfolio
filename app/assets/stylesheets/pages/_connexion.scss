@@ -1,9 +1,14 @@
+.background {
+  background-image: url("vagues.png");
+  background-size: cover;
+}
+
+
 .card-connexion {
   background-color: rgba(255, 255, 255, 0.137);
   width: 900px;
   height: 450px;
   text-align: center;
-  // box-shadow: 0 10px 20px rgba(65, 65, 65, 0.438);
 }
 
 
@@ -18,13 +23,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px;
+  padding: 0px 50px;
   color: black;
+
+  .avatar-div {
+    display: none;
+  }
 }
 
 .card-avatar {
   width: 35%;
 }
+
+
 
 .form-check {
   text-align: start;
@@ -34,18 +45,32 @@
 @media (max-width: 650px) {
   .card-connexion {
     flex-direction: column;
-    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    height: 100vh;
   }
 
   .card-avatar {
     width: 100%;
-    height: 25%;
+    height: 15%;
+
+    img {
+      display: none;
+    }
   }
 
 
-
   .card-white {
-    height: 75%;
+    height: 85%;
     width: 100%;
+    padding: 0px 20px;
+    position: relative;
+
+    .avatar-div {
+      display: inline;
+      width: 100%;
+      position: absolute;
+      top: -75px;
+      padding-right: 40px;
+    }
   }
 }

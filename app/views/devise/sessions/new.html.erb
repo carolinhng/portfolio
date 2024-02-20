@@ -1,5 +1,5 @@
 
-<div class="height-100vh display-flex justify-content-center align-item-center">
+<div class="height-100vh display-flex justify-content-center align-item-center background">
 
   <div class="display-flex card-connexion justify-space-between align-item-center">
 
@@ -10,7 +10,13 @@
 
 
 
+
     <div class="card-white">
+
+      <div class="avatar-div">
+        <%= image_tag "caro.jpg", class: "avatar avatar-bordered avatar-grand" %>
+      </div>
+
       <h2 class="text-align-center mb-5">Connexion</h2>
 
       <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -38,7 +44,14 @@
         </div>
       <% end %>
 
-      <%= render "devise/shared/linklogin"%>
+
+        <%= render "devise/shared/linklogin" %>
+        <%= link_to root_path do %>
+          <div class="link">
+            <i class="fa-solid fa-arrow-left" style="color: #3dcab1;"></i> Revenir à l'accueil
+          </div>
+        <% end %>
+
     </div>
 
 
