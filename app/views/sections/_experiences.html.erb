@@ -2,27 +2,32 @@
   <div class="container-section padding-70 color-black">
 
     <h2 class="mb-5">Mes expériences</h2>
-    <div class="dis-flex" id="experiences" data-controller="expechange">
+
+    <div class="dis-flex"
+         id="experiences"
+         data-controller="expechange"
+         data-expechange-default-tab-value="<%=@experiences.first.id%>">
 
       <div class="border-left dis-flex-column">
-
         <% @experiences.each do |experience| %>
 
-          <div class="click-on"
-               data-expechange-id-value= "<% experience.id %>">
+              <div class="click-off"
+                   id="<%=experience.id%>"
+                   data-expechange-target="tabs"
+                   data-action="click->expechange#select">
 
-            <h4><%= experience.company.upcase %></h4>
+                  <h4><%= experience.company.upcase %></h4>
 
-          </div>
+              </div>
 
         <% end %>
-
       </div>
 
-      <% @experiences.limit(1).each do |experience| %>
-        <div>
+
+      <% @experiences.each do |experience| %>
+        <div id="<%=experience.id%>" data-expechange-target="panels">
           <h3 class="mb-3 bold color-blue"><%= experience.post.upcase %></h3>
-            <h5 class="mb-3 color-bluegreen"><%= experience.start_date %> - <%= experience.end_date %></h5>
+            <h5 class="mb-3 color-bluegreen"><%= experience.start_date.strftime('%B %Y') %> - <%= experience.end_date.strftime('%B %Y') %></h5>
               <ul class="list">
                 <% experience.missions.each do |mission| %>
 
