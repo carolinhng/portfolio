@@ -30,6 +30,8 @@ body {
 }
 
 
+
+
 .flex-column {
   flex-direction: column;
 }
@@ -114,4 +116,36 @@ h5 {
 
 .margin-neg {
   margin-bottom: -20px;
+}
+
+.padding-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+@media (max-width: 650px) {
+  .padding-70 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+
+.grid-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.gap-50 {
+  gap: 50px;
+}
+
+@media (max-width: 903px) {
+  .grid-card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.text-center {
+  text-align: center;
 }
