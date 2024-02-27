@@ -1,0 +1,24 @@
+<div class="background-white">
+  <div class="container-section padding-70 color-black" id="projets">
+
+    <h2 class="mb-5">Mes projets</h2>
+
+
+    <% @projects.each do |project| %>
+
+      <div class="display-flex">
+        <%= image_tag  "remadesyn.png", class: "img-project" %>
+        <div class="rect-vert">
+          <h3 class="bold color-blue"><%= project.name %></h3>
+          <p><%= project.description %></p>
+        </div>
+      </div>
+
+    <% end %>
+
+
+
+
+
+  </div>
+</div>

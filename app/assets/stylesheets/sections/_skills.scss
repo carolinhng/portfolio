@@ -1,3 +1,19 @@
-.img-40 {
+.img-hei-60 {
+  height: 60px;
+}
+
+.img-wid-60 {
   width: 60px;
+}
+
+.margin-bot-20 {
+  margin-bottom: 19px;
+}
+
+
+@media (max-width: 903px) {
+  .grid-card.logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

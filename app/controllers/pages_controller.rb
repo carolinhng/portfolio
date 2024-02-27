@@ -5,7 +5,7 @@ class PagesController < ApplicationController
 
   def home
     @experiences = Experience.all
-    @experience = Experience.find(2)
+    @projects = Project.all
   end
 
 end

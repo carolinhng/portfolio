@@ -11,7 +11,7 @@ independante = Experience.create!(
   post: "auto-entrepreneuse",
   start_date: '01/09/2021',
   end_date: "01/08/2023",
-  user: caro
+  user: User.first
 )
 
 Mission.create!(mission: "Montage et gestion globale d’un projet e-commerce.", experience: independante)
@@ -28,7 +28,7 @@ aldi = Experience.create!(
   post: "agente administrative",
   start_date: "01/05/2023",
   end_date: "01/09/2023",
-  user: caro
+  user: User.first
 )
 
 Mission.create!(mission: "Saisies informatiques des sorties et des entrées de marchandises.", experience: aldi)
@@ -45,7 +45,7 @@ dujardin = Experience.create!(
   post: "préparatrice de commandes",
   start_date: "01/11/2022",
   end_date: "01/02/2023",
-  user: caro
+  user: User.first
 )
 
 Mission.create!(mission: "Prélèvements des cartons", experience: dujardin)
@@ -63,7 +63,7 @@ sportrack = Project.create!(
   Entreprise spécialisée dans la vente de poudre hémostatique.
   Produis destinés aux professionnels de santé.",
   url_link: "",
-  github_link: "",
+  github_link: "https://github.com/carolinhng/sportrack",
   user: User.last
 )
 

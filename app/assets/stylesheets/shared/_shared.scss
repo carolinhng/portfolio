@@ -100,10 +100,6 @@ h5 {
   align-items: center;
 }
 
-.height-100vh {
-  height: 100vh;
-}
-
 
 .link {
   color: $bleuvert;
@@ -123,10 +119,24 @@ h5 {
   padding-bottom: 70px;
 }
 
+.padding-90 {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+
 @media (max-width: 650px) {
-  .padding-70 {
+  .padding-70, .padding-90 {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 20px;
   }
 }
 
