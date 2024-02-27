@@ -1,16 +1,18 @@
 <div class="container-section padding-70 height-100vh">
 
+  <h2 class="mb-5 text-center">Contact</h2>
+
   <%= simple_form_for @message do |f| %>
 
-    <div>
-      <%= f.input :first_name, placeholder: 'Prénom', label: false %>
+    <div class="grip-form ">
+      <%= f.input :first_name, placeholder: 'Prénom', label: false, class: "input" %>
       <%= f.input :last_name, placeholder: 'Nom', label: false %>
     </div>
     <%= f.input :email, placeholder: 'Email', label: false %>
     <%= f.input :object, placeholder: 'Objet', label: false %>
     <%= f.input :phone_number, placeholder: 'Téléphone', label: false  %>
     <%= f.input :message, placeholder: 'Message', label: false  %>
-    <%= f.button :submit %>
+    <%= f.button :submit, class: "border-none"%>
   <% end %>
 
 </div>
