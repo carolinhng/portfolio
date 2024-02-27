@@ -6,12 +6,30 @@
 
     <% @projects.each do |project| %>
 
-      <div class="display-flex">
+      <div class="display-flex align-item-center">
+
+
         <%= image_tag  "remadesyn.png", class: "img-project" %>
-        <div class="rect-vert">
-          <h3 class="bold color-blue"><%= project.name %></h3>
-          <p><%= project.description %></p>
-        </div>
+
+          <div class="display-flex flex-column justify-content-center align-item-end absolute">
+
+            <h3 class="bold color-bluegreen"><%= project.name %></h3>
+
+              <div class="rect-bleu">
+                <p><%= project.description %></p>
+              </div>
+
+            <div class="display-flex">
+              <% project.project_technos.each do |techno| %>
+                  <p class="pastille hover"><%= techno.techno.techno %></p>
+              <% end %>
+            </div>
+
+
+          </div>
+
+
+
       </div>
 
     <% end %>

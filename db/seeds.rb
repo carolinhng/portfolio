@@ -59,9 +59,9 @@ Mission.create!(mission: "Inventaire.", experience: dujardin)
 
 sportrack = Project.create!(
   name: "Sportrack",
-  description: "Bénévolat - Site vitrine réalisé sous Wordpress.
-  Entreprise spécialisée dans la vente de poudre hémostatique.
-  Produis destinés aux professionnels de santé.",
+  description: "Projet de fin de formation à l’école Le Wagon.
+  Application web destinée aux amateurs de sport.
+  Elle permet de suivre des données personnalisées sur un sport.",
   url_link: "",
   github_link: "https://github.com/carolinhng/sportrack",
   user: User.last
@@ -75,7 +75,7 @@ postgresql = Techno.create!(techno: "PostgreSQL")
 html = Techno.create!(techno: "HTML")
 scss = Techno.create!(techno: "SCSS")
 bootstrap = Techno.create!(techno: "Bootstrap")
-stimulus = Techno.create!(techno: "Stimulus JS")
+stimulus = Techno.create!(techno: "StimulusJS")
 
 
 # Project-Technos --------------------------------------

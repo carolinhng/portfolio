@@ -2,12 +2,26 @@
   width: 700px;
   height: 400px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 5px;
+  position: relative;
+
+  &:hover {
+    background-color: white;
+  }
 }
 
-.rect-vert {
-  background-color: #3dcab049;
-  height: 550px;
-  width: 700px;
-  border-radius: 10px;
+.rect-bleu {
+  background-color: $bleumarine;
+  border-radius: 5px;
+  padding: 20px;
+  color: white;
+  font-weight: lighter;
+  margin: 20px 0px;
+  text-align: end;
+}
+
+.absolute {
+  position: absolute;
+  width: 40%;
+  right: 200px;
 }
