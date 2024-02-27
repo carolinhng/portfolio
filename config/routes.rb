@@ -20,4 +20,8 @@ Rails.application.routes.draw do
   end
 
   resources :dashboards, only: [:index]
+
+  resources :messages, only: [:index, :new, :create]
+
+
 end

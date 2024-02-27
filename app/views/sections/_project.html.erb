@@ -3,40 +3,31 @@
 
     <h2 class="mb-5">Mes projets</h2>
 
-
     <% @projects.each do |project| %>
-
       <div class="display-flex align-item-center">
-
-
-        <%= image_tag  "remadesyn.png", class: "img-project" %>
-
+      <%# image %>
+        <div class="img-project">
+          <%= image_tag  "remadesyn.png"%>
+          <div class="filter"></div>
+        </div>
+      <%# block_right %>
           <div class="display-flex flex-column justify-content-center align-item-end absolute">
-
             <h3 class="bold color-bluegreen"><%= project.name %></h3>
-
               <div class="rect-bleu">
                 <p><%= project.description %></p>
               </div>
-
-            <div class="display-flex">
+            <div class="display-flex mb-3">
               <% project.project_technos.each do |techno| %>
                   <p class="pastille hover"><%= techno.techno.techno %></p>
               <% end %>
             </div>
-
-
+            <div class="display-flex">
+              <a href="<%= project.github_link %>" target="_blank"><i class="fa-brands fa-github icone-size"></i></a>
+              <a href="<%= project.url_link %>" target="_blank"><i class="fa-solid fa-square-arrow-up-right icone-size"></i></a>
+            </div>
           </div>
-
-
-
       </div>
-
     <% end %>
-
-
-
-
-
   </div>
+  <div class="barre width-350"></div>
 </div>

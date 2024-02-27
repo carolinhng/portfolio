@@ -1,12 +1,27 @@
 .img-project {
-  width: 700px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 5px;
   position: relative;
 
+  img {
+    width: 550px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+}
+
+.filter {
+  position: absolute;
+  background: #3dcab048;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.7s;
+
   &:hover {
-    background-color: white;
+    opacity: 1;
   }
 }
 
@@ -24,4 +39,15 @@
   position: absolute;
   width: 40%;
   right: 200px;
+}
+
+.icone-size {
+  font-size: 25px;
+  margin-left: 15px;
+  color: #3dcab0;
+  opacity: 0.6;
+
+  &:hover {
+    opacity: 1;
+  }
 }
