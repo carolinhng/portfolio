@@ -9,7 +9,8 @@ class MessagesController < ApplicationController
     if @message.save
       redirect_to root_path(anchor: "contact"), notice: "Votre message a bien été envoyé"
     else
-      redirect_to root_path, status: :unprocessable_entity, notice: "Veuillez remplir les champs obligatoires"
+      flash[:alert] = "Veuillez remplir les champs obligatoires"
+      redirect_to root_path(anchor: "contact")
     end
   end
 

@@ -1,25 +1,15 @@
-.text-justify {
-  text-align: justify;
-}
-
-.flex-gap-5 {
+.flex-gap-40 {
   display: flex;
   gap: 40px;
 }
 
 @media (max-width: 650px) {
-  .flex-gap-5 {
+  .flex-gap-40 {
     display: block;
   }
 }
 
 // cards hobbies
-
-
-.grid-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
 
 .card-one, .card-three {
   background: radial-gradient(circle, rgba(7,28,66,1) 14%, rgb(7, 32, 76) 51%, rgba(7,28,66,1) 90%);

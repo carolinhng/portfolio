@@ -8,16 +8,14 @@
          data-controller="expechange"
          data-expechange-default-tab-value="<%=@experiences.first.id%>">
 
-      <div class="border-left dis-flex-column">
+      <div class="dis-flex-column scrolling-container-x">
         <% @experiences.each do |experience| %>
 
-              <div class="click-off"
+              <div class="click-off border-left"
                    id="<%=experience.id%>"
                    data-expechange-target="tabs"
                    data-action="click->expechange#select">
-
                   <h4><%= experience.company.upcase %></h4>
-
               </div>
 
         <% end %>
@@ -26,7 +24,7 @@
 
       <% @experiences.each do |experience| %>
         <div id="<%=experience.id%>" data-expechange-target="panels">
-          <h3 class="mb-3 bold color-blue"><%= experience.post.upcase %></h3>
+          <h3 class="mb-3 bold color-blue"><%= experience.post.capitalize %></h3>
             <h5 class="mb-3 color-bluegreen"><%= experience.start_date.strftime('%B %Y') %> - <%= experience.end_date.strftime('%B %Y') %></h5>
               <ul class="list">
                 <% experience.missions.each do |mission| %>

@@ -7,7 +7,7 @@
   padding: 20px;
   background-color: $vertfade;
   width: 200px;
-  border-left: 4px solid $bleuvert;
+  border-left: 2px solid $bleuvert;
   h4 {
     color: $bleumarine;
     font-weight: 700;
@@ -20,13 +20,15 @@
 
 .click-off {
   padding: 20px;
+  width: 200px;
+
   h4 {
     color: $bleuvert;
     font-weight: 700;
   }
   &:hover {
     background-color: $vertfade;
-    border-left: 4px solid $bleuvert;
+    border-left: 2px solid $bleuvert;
     transition: 0.3s;
   }
 
@@ -34,7 +36,7 @@
     padding: 20px;
     background-color: $vertfade;
     width: 200px;
-    border-left: 4px solid $bleuvert;
+    border-left: 2px solid $bleuvert;
     transition: 0.3s;
     h4 {
       color: $bleumarine;
@@ -79,11 +81,39 @@
 @media (max-width: 650px) {
   .dis-flex-column {
     display: flex;
-    flex-wrap: wrap;
+  }
+
+  .scrolling-container-x {
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .click-on {
+    border-bottom: 2px solid $bleuvert;
+    border-left: none;
+    h4 {
+      text-align: center;
+    }
+  }
+
+  .click-off {
+    h4 {
+      text-align: center;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $bleuvert;
+      border-left: none;
+    }
+
+    &:focus {
+      border-bottom: 2px solid $bleuvert;
+      border-left: none;
+    }
   }
 
   .border-left {
-    border-bottom: 1px solid;
     border-left: none;
   }
 
