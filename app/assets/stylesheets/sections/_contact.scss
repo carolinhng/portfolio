@@ -4,10 +4,10 @@
   gap: 20px;
 }
 
-
 .icone-style {
   font-size: 50px;
   margin: 0px 10px;
+  color: white;
 
   &:hover {
     color: $bleuvert;
@@ -19,6 +19,11 @@
   font-size: 12px;
 }
 
-.padding-bottom {
-  padding-bottom: 100px;
+.mail-to-style {
+  color: white;
+
+  &:hover {
+    color: $bleuvert;
+    transition: 0.4s;
+  }
 }

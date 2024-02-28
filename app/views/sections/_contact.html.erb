@@ -1,4 +1,4 @@
-<div class="container-section padding-70 height-100vh">
+<div class="container-section padding-70">
 
   <h2 class="mb-5 text-center">On se contact ?</h2>
 
@@ -7,26 +7,25 @@
       <%= f.input :first_name, label: 'Prénom' %>
       <%= f.input :last_name, label: 'Nom' %>
     </div>
-    <div class="grip-form">
+    <div class="grip-form" id="contact">
       <%= f.input :email, label: 'Email' %>
       <%= f.input :phone_number, label: 'Téléphone'  %>
     </div>
-    <%= f.input :object, label: 'Objet'%>
     <%= f.input :message, label: 'Message'  %>
     <div class="display-flex justify-content-center">
-      <%= f.button :submit, class: "border-none mt-4 mb-5"%>
+      <%= f.button :submit,"Envoyer", class: "border-none mt-4 mb-5" %>
     </div>
   <% end %>
 
-  <div class="display-flex justify-content-center mt-2">
-    <%= link_to "https://github.com/carolinhng" %>
-    <i class="fa-brands fa-github icone-style"></i>
-    <i class="fa-brands fa-linkedin-in icone-style"></i>
+  <div class="display-flex align-item-center mt-3 flex-column">
+    <div>
+      <a href="https://github.com/carolinhng"><i class="fa-brands fa-github icone-style"></i></a>
+      <a href=""><i class="fa-brands fa-linkedin-in icone-style"></i></a>
+    </div>
+    <%= mail_to "caroline.ng.pro@hotmail.com", class: "mail-to-style mt-3" %>
   </div>
-    <p class="text-center mt-3">caroline.ng.pro@hotmail.com</p>
-    <p class="text-center mt-5 padding-bottom font-size-12">© Copyright 2024 - Caroline NGUYEN.<br>Tous droits réservés.</p>
-
-
+    <p class="text-center mt-5 font-size-12">© Copyright 2024 - Caroline NGUYEN.<br>Tous droits réservés.</p>
 
 
 </div>
+<div class="barre width-950"></div>

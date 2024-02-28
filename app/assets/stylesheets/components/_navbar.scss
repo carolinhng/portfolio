@@ -56,6 +56,8 @@
     align-items: center;
     margin-left: -100%;
     transition: all 0.5s ease;
+    position: fixed;
+    z-index: 1;
 
     .link-nav {
       margin: 0;
@@ -102,6 +104,8 @@
 .menu-hamburger {
   display: none;
   position: absolute;
+  position: fixed;
   top: 55px;
   right: 35px;
+  z-index: 1;
 }
