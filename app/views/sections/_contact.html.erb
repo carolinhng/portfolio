@@ -1,18 +1,32 @@
 <div class="container-section padding-70 height-100vh">
 
-  <h2 class="mb-5 text-center">Contact</h2>
+  <h2 class="mb-5 text-center">On se contact ?</h2>
 
   <%= simple_form_for @message do |f| %>
-
-    <div class="grip-form ">
-      <%= f.input :first_name, placeholder: 'Prénom', label: false, class: "input" %>
-      <%= f.input :last_name, placeholder: 'Nom', label: false %>
+    <div class="grip-form">
+      <%= f.input :first_name, label: 'Prénom' %>
+      <%= f.input :last_name, label: 'Nom' %>
     </div>
-    <%= f.input :email, placeholder: 'Email', label: false %>
-    <%= f.input :object, placeholder: 'Objet', label: false %>
-    <%= f.input :phone_number, placeholder: 'Téléphone', label: false  %>
-    <%= f.input :message, placeholder: 'Message', label: false  %>
-    <%= f.button :submit, class: "border-none"%>
+    <div class="grip-form">
+      <%= f.input :email, label: 'Email' %>
+      <%= f.input :phone_number, label: 'Téléphone'  %>
+    </div>
+    <%= f.input :object, label: 'Objet'%>
+    <%= f.input :message, label: 'Message'  %>
+    <div class="display-flex justify-content-center">
+      <%= f.button :submit, class: "border-none mt-4 mb-5"%>
+    </div>
   <% end %>
+
+  <div class="display-flex justify-content-center mt-2">
+    <%= link_to "https://github.com/carolinhng" %>
+    <i class="fa-brands fa-github icone-style"></i>
+    <i class="fa-brands fa-linkedin-in icone-style"></i>
+  </div>
+    <p class="text-center mt-3">caroline.ng.pro@hotmail.com</p>
+    <p class="text-center mt-5 padding-bottom font-size-12">© Copyright 2024 - Caroline NGUYEN.<br>Tous droits réservés.</p>
+
+
+
 
 </div>

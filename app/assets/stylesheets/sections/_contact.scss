@@ -1,5 +1,24 @@
 .grip-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 20px;
+}
+
+
+.icone-style {
+  font-size: 50px;
+  margin: 0px 10px;
+
+  &:hover {
+    color: $bleuvert;
+    transition: 0.4s;
+  }
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.padding-bottom {
+  padding-bottom: 100px;
 }
