@@ -50,3 +50,29 @@
     text-align: center;
   }
 }
+
+
+// barre titre - barres.scss
+
+.size-barre-22-245 {
+  height: 22px;
+  width: 245px;
+}
+
+.position-barre-titre-20-485 {
+  top: 20px;
+  left: 485px;
+}
+
+@media (max-width: 650px) {
+
+  .position-barre-titre-20-5 {
+    top: 15px;
+    left: 75px;
+  }
+
+  .size-barre-22-12  {
+    width: 158px;
+    height: 15px;
+  }
+}

@@ -66,6 +66,10 @@ body {
   color: black;
 }
 
+.color-white {
+  color: white;
+}
+
 .color-blue {
   color: $bleumarine;
 }
@@ -207,4 +211,9 @@ h5 {
 
 .text-end {
   text-align: end;
+}
+
+
+.pos-relative {
+  position: relative;
 }

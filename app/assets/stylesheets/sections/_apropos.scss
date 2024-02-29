@@ -1,3 +1,16 @@
+// Barre-titre - barres.scss
+
+.size-barre-22-120 {
+  height: 22px;
+  width: 120px;
+}
+
+.position-barre-titre-20-50 {
+  top: 20px;
+  left: 50px;
+}
+
+
 .flex-gap-40 {
   display: flex;
   gap: 40px;
@@ -6,6 +19,16 @@
 @media (max-width: 650px) {
   .flex-gap-40 {
     display: block;
+  }
+
+  .position-barre-titre-20-50 {
+    top: 15px;
+    left: 35px;
+  }
+
+  .size-barre-22-120  {
+    width: 95px;
+    height: 15px;
   }
 }
 
@@ -23,10 +46,10 @@
   text-align: center;
   padding: 40px;
   color: white;
-  i {
-    font-size: 40px;
-    padding-bottom: 15px;
-  }
+}
+
+.font-size-30 {
+  font-size: 30px;
 }
 
 // Format mobile

@@ -1,0 +1,22 @@
+.size-barre-22-220 {
+  height: 22px;
+  width: 220px;
+}
+
+.position-barre-titre-20-95 {
+  top: 20px;
+  left: 95px;
+}
+
+@media (max-width: 650px) {
+
+  .position-barre-titre-20-95 {
+    top: 15px;
+    left: 75px;
+  }
+
+  .size-barre-22-220  {
+    width: 158px;
+    height: 15px;
+  }
+}
