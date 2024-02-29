@@ -29,7 +29,10 @@
               <ul class="list">
                 <% experience.missions.each do |mission| %>
 
-                  <div class="display-flex align-item-center"><i class="fa-solid fa-angles-right" style="color: #67decc;"></i><li class="ps-2"><%= mission.mission %></li></div>
+                  <div class="display-flex align-item-start mb-3">
+                    <i class="fa-solid fa-caret-right" style="color: #3dcab1;"></i>
+                    <li class="ps-3 margin-top-5-neg"><%= mission.mission %></li>
+                  </div>
 
                 <% end %>
               </ul>
