@@ -1,33 +1,44 @@
 // Barre-titre - barres.scss
+.flex-gap-40 {
+  display: flex;
+  gap: 40px;
+}
 
-.size-barre-22-120 {
+.size-barre {
   height: 22px;
   width: 120px;
 }
 
-.position-barre-titre-20-50 {
+.position-barre-titre {
   top: 20px;
   left: 50px;
 }
 
 
-.flex-gap-40 {
-  display: flex;
-  gap: 40px;
+@media (max-width: 935px) {
+  .position-barre-titre {
+    top: 15px;
+    left: 83px;
+  }
+
+  .size-barre  {
+    width: 183px;
+    height: 20px;
+  }
 }
+
 
 @media (max-width: 650px) {
   .flex-gap-40 {
     display: block;
   }
 
-  .position-barre-titre-20-50 {
-    top: 15px;
+  .position-barre-titre {
     left: 35px;
   }
 
-  .size-barre-22-120  {
-    width: 95px;
+  .size-barre  {
+    width: 90px;
     height: 15px;
   }
 }

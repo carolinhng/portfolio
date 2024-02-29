@@ -1,22 +1,29 @@
-.size-barre-22-220 {
-  height: 22px;
-  width: 220px;
-}
-
-.position-barre-titre-20-95 {
-  top: 20px;
+.left-e {
   left: 95px;
 }
 
-@media (max-width: 650px) {
+.width-e  {
+  width: 215px;
+}
 
-  .position-barre-titre-20-95 {
-    top: 15px;
-    left: 75px;
+
+@media (max-width: 935px) {
+  .left-e {
+    left: 85px;
   }
 
-  .size-barre-22-220  {
-    width: 158px;
-    height: 15px;
+  .width-e  {
+    width: 185px;
+  }
+}
+
+
+@media (max-width: 650px) {
+  .left-e {
+    left: 72px;
+  }
+
+  .width-e  {
+    width: 160px;
   }
 }

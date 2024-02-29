@@ -30,30 +30,28 @@
 
 // barre titre - barres.scss
 
-.size-barre-22-255 {
-  height: 22px;
-  width: 255px;
+.left-c {
+  left: 95px;
 }
 
-.position-barre-titre-20-465 {
-  top: 20px;
-  left: 465px;
+.width-c {
+  width: 235px;
 }
+
+
+@media (max-width: 935px) {
+  .width-c {
+    width: 200px;
+  }
+}
+
 
 @media (max-width: 650px) {
-
-  .position-barre-titre-20-465 {
-    top: 15px;
-    left: 210px;
-  }
-
-  .size-barre-22-255  {
-    width: 190px;
-    height: 15px;
+  .width-c {
+    width: 151px;
   }
 
   .icone-style {
     font-size: 35px;
   }
-
 }

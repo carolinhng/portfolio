@@ -119,59 +119,32 @@
 
 // barre titre - barres.scss
 
-.size-barre-22-125 {
-  height: 22px;
-  width: 125px;
+.left-p {
+  left: 95px;
 }
 
-.position-barre-titre-20-540 {
-  top: 20px;
-  left: 540px;
+.width-p  {
+  width: 120px;
 }
 
-
-
-@media (max-width: 1300px) {
-  .position-barre-titre-20-485 {
-    left: 441px;
-  }
-}
-
-@media (max-width: 1040px) {
-  .position-barre-titre-20-485 {
-    left: 390px;
-  }
-}
 
 @media (max-width: 935px) {
-  .position-barre-titre-20-485 {
-    left: 235px;
+  .left-p {
+    left: 81px;
+  }
+
+  .width-p  {
+    width: 106px;
   }
 }
-
-@media (max-width: 800px) {
-  .position-barre-titre-20-485 {
-    left: 280px;
-  }
-}
-
 
 
 @media (max-width: 650px) {
-
-  .position-barre-titre-20-540 {
-    top: 15px;
-    left: 223px;
+  .left-p {
+    left: 75px;
   }
 
-  .size-barre-22-125  {
-    width: 90px;
-    height: 15px;
-  }
-}
-
-@media (max-width: 450px) {
-  .position-barre-titre-20-540 {
-    left: 195px;
+  .width-p  {
+    width: 85px;
   }
 }
