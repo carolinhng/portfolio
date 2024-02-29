@@ -28,9 +28,32 @@
   }
 }
 
+// barre titre - barres.scss
+
+.size-barre-22-255 {
+  height: 22px;
+  width: 255px;
+}
+
+.position-barre-titre-20-465 {
+  top: 20px;
+  left: 465px;
+}
 
 @media (max-width: 650px) {
+
+  .position-barre-titre-20-465 {
+    top: 15px;
+    left: 210px;
+  }
+
+  .size-barre-22-255  {
+    width: 190px;
+    height: 15px;
+  }
+
   .icone-style {
     font-size: 35px;
   }
+
 }

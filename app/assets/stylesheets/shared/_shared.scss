@@ -22,10 +22,6 @@
 body {
   background: radial-gradient(circle, rgba(7,28,66,1) 14%, rgb(7, 35, 85) 51%, rgba(7,28,66,1) 90%);
   color: $white;
-
-  p {
-    font-size: calc(13px + 0.3vw);
-  }
 }
 
 
@@ -131,28 +127,69 @@ body {
   padding-bottom: 90px;
 }
 
+@media (max-width: 650px) {
+  .padding-70, .padding-90 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
 
 // Font-size --------------------------------
 
 h2 {
-  // font-size: 35px;
-  font-size: calc(31px + 0.3vw);
+  font-size: 35px;
   font-weight: 700;
 }
 
 h3 {
-  // font-size: 24px;
-  font-size: calc(20px + 0.3vw);
+  font-size: 24px;
 }
 
 h4 {
-  // font-size: 20px;
-  font-size: calc(16px + 0.3vw);
+  font-size: 20px;
 }
 
 h5 {
-  // font-size: 18px;
-  font-size: calc(14px + 0.3vw);
+  font-size: 18px;
+}
+
+p {
+  font-size: 16px;
+}
+
+
+@media (max-width: 935px) {
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 650px) {
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
 }
 
 .font-size-12 {
@@ -163,21 +200,6 @@ h5 {
   font-size: 14px;
 }
 
-
-@media (max-width: 650px) {
-  .padding-70, .padding-90 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  h2 {
-    font-size: 26px;
-  }
-
-  h3 {
-    font-size: 20px;
-  }
-}
 
 // Grid ----------------------
 
@@ -213,6 +235,9 @@ h5 {
   text-align: end;
 }
 
+
+
+// relative ------------
 
 .pos-relative {
   position: relative;

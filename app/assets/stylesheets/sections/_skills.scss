@@ -42,37 +42,26 @@
   }
 }
 
-@media (max-width: 650px) {
-  .display-flex.flex-wrap-wrap.mt-4 {
-    justify-content: center;
-  }
-  .text-align-mobile {
-    text-align: center;
-  }
+
+
+// Barre-titre - barres.scss
+
+.widt-t {
+width: 210px;
 }
 
-
-// barre titre - barres.scss
-
-.size-barre-22-245 {
-  height: 22px;
-  width: 245px;
-}
-
-.position-barre-titre-20-485 {
-  top: 20px;
-  left: 485px;
+.left {
+  left: 110px;
 }
 
 @media (max-width: 650px) {
-
-  .position-barre-titre-20-5 {
+  .position-barre-titre-20-485 {
     top: 15px;
-    left: 75px;
+    left: 35px;
   }
 
-  .size-barre-22-12  {
-    width: 158px;
+  .size-barre-22-240  {
+    width: 95px;
     height: 15px;
   }
 }

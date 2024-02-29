@@ -117,18 +117,61 @@
 
 }
 
-// // Format mobile
-// @media (max-width: 650px) {
-//   .container-section {
-//     width: 100%;
-//     padding: 0px 40px;
-//   }
-// }
+// barre titre - barres.scss
 
-// // Format mobile
-// @media (max-width: 450px) {
-//   .container-section {
-//     width: 100%;
-//     padding: 0px 30px;
-//   }
-// }
+.size-barre-22-125 {
+  height: 22px;
+  width: 125px;
+}
+
+.position-barre-titre-20-540 {
+  top: 20px;
+  left: 540px;
+}
+
+
+
+@media (max-width: 1300px) {
+  .position-barre-titre-20-485 {
+    left: 441px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .position-barre-titre-20-485 {
+    left: 390px;
+  }
+}
+
+@media (max-width: 935px) {
+  .position-barre-titre-20-485 {
+    left: 235px;
+  }
+}
+
+@media (max-width: 800px) {
+  .position-barre-titre-20-485 {
+    left: 280px;
+  }
+}
+
+
+
+@media (max-width: 650px) {
+
+  .position-barre-titre-20-540 {
+    top: 15px;
+    left: 223px;
+  }
+
+  .size-barre-22-125  {
+    width: 90px;
+    height: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .position-barre-titre-20-540 {
+    left: 195px;
+  }
+}
