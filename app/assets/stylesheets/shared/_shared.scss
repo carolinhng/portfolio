@@ -102,8 +102,6 @@ body {
 }
 
 
-
-
 // padding and title ----------------------
 
 .padding-70 {
@@ -115,6 +113,9 @@ body {
   padding-top: 90px;
   padding-bottom: 90px;
 }
+
+
+// Font-size --------------------------------
 
 h2 {
   // font-size: 35px;
@@ -137,6 +138,10 @@ h5 {
   font-size: calc(14px + 0.3vw);
 }
 
+.font-size-12 {
+  font-size: 12px;
+}
+
 
 @media (max-width: 650px) {
   .padding-70, .padding-90 {
@@ -157,6 +162,9 @@ h5 {
 
 .grid-card {
   display: grid;
+}
+
+.grid-temp-4fr {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 

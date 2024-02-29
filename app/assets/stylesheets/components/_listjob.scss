@@ -1,16 +1,15 @@
 .border-left {
-  border-left: 1px solid;
+  border-left: 2px solid #071c4220;
 }
 
 
 .click-on {
-  padding: 20px;
+  padding: 15px;
   background-color: $vertfade;
   width: 200px;
   border-left: 2px solid $bleuvert;
   h4 {
     color: $bleumarine;
-    font-weight: 700;
   }
   &:hover {
     background-color: #b7f9ed;
@@ -19,12 +18,11 @@
 }
 
 .click-off {
-  padding: 20px;
+  padding: 15px;
   width: 200px;
 
   h4 {
     color: $bleuvert;
-    font-weight: 700;
   }
   &:hover {
     background-color: $vertfade;
@@ -90,6 +88,7 @@
   }
 
   .click-on {
+    padding: 10px;
     border-bottom: 2px solid $bleuvert;
     border-left: none;
     h4 {
@@ -98,6 +97,7 @@
   }
 
   .click-off {
+    padding: 10px;
     h4 {
       text-align: center;
     }

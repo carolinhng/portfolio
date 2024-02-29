@@ -1,19 +1,20 @@
-.img-hei-60 {
-  height: 60px;
+.padding-bot-70 {
+  padding-bottom: 70px;
 }
 
-.img-wid-60 {
-  width: 60px;
+.img-size {
+  width: 25px;
 }
 
-.margin-bot-20 {
-  margin-bottom: 19px;
+@media (max-width: 933px) {
+
+}
+
+@media (max-width: 650px) {
+
 }
 
 
-@media (max-width: 903px) {
-  .grid-card.logo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
+@media (max-width: 450px) {
+
 }
