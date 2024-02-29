@@ -9,6 +9,10 @@
   }
 }
 
+#projets {
+  position: relative;
+}
+
 .filter {
   position: absolute;
   background: #3dcab048;
@@ -37,8 +41,8 @@
 
 .absolute {
   position: absolute;
-  width: 40%;
-  right: 200px;
+  width: 60%;
+  right: 0px;
 }
 
 .icone-size {
@@ -51,3 +55,54 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 800px) {
+
+  .mobile-behevior-flex {
+    display: block;
+  }
+
+  .mobile-none {
+    display: none;
+  }
+
+  .img-project {
+    img {
+      width: 100%;
+      height: 300px;
+    }
+  }
+
+  .filter {
+    position: absolute;
+    background: #3dcab048;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    opacity: 1;
+    transition: 0.7s;
+
+    &:hover {
+      opacity: 0;
+    }
+  }
+
+}
+
+// // Format mobile
+// @media (max-width: 650px) {
+//   .container-section {
+//     width: 100%;
+//     padding: 0px 40px;
+//   }
+// }
+
+// // Format mobile
+// @media (max-width: 450px) {
+//   .container-section {
+//     width: 100%;
+//     padding: 0px 30px;
+//   }
+// }
