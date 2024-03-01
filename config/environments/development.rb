@@ -76,4 +76,17 @@ Rails.application.configure do
 
   # Raise error when a before_action's only/except options reference missing actions
   config.action_controller.raise_on_missing_callback_actions = true
+
+  # Configure mailer
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.live.com',
+    port:                 587,
+    domain:               'hotmail.com',
+    user_name:            ENV['HOTMAIL_EMAIL'],
+    password:             ENV['HOTMAIL_PASSWORD'],
+    authentication:       'login',
+    enable_starttls_auto: true
+  }
+
 end
