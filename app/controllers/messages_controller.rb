@@ -7,7 +7,7 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(message_params)
     if @message.save
-      MessageMailer.new_message(@message).deliver_now
+      MessageMailer.with(message: @message).new_message.deliver_now
       redirect_to root_path(anchor: "contact"), notice: "Votre message a bien été envoyé"
     else
       flash[:alert] = "Veuillez remplir les champs obligatoires"

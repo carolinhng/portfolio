@@ -1,7 +1,7 @@
-<%= @sender_name %> vous a contacté sur votre site !
+<%= @message.first_name %> <%= @message.last_name %> vous a contacté sur votre site !
 
-=====================================================
+==============================================================
 
-Telephone : <%= @sender_phone %>
-Email : <%= @sender_email %>
-Son message : <%= @content %>
+Telephone : <%= @message.phone_number %>
+Email : <%= @message.email %>
+Son message : <%= @message.message %>

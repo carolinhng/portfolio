@@ -5,9 +5,9 @@
   </head>
 
   <body>
-    <h1><%= @sender_name %> vous a contacté sur votre site !</h1>
-    <p>Telephone : <%= @sender_phone %></p>
-    <p>Email : <%= @sender_email %></p>
-    <p>Son message : <%= @content %></p>
+    <h1><%= @message.first_name %> <%= @message.last_name %>vous a contacté sur votre site !</h1>
+    <p>Telephone : <%= @message.phone_number %></p>
+    <p>Email : <%= @message.email %></p>
+    <p>Son message : <%= @message.message %></p>
   </body>
 </html>
