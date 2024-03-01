@@ -2,13 +2,13 @@
 
     <nav class="navbar">
 
-        <div>
+        <div class="reveal">
           <%= link_to root_path do %>
             <%= image_tag "caro.jpg" %>
           <% end %>
         </div>
 
-        <div class="nav-links" data-togglemenu-target="links">
+        <div class="nav-links reveal-2" data-togglemenu-target="links">
           <ul class="d-flex">
             <li><%= link_to "Qui suis-je ?", {anchor: "profil"}, class: "link-nav" %></li>
             <li><%= link_to "Expériences", {anchor: "experiences"}, class:"margin-left link-nav" %></li>
