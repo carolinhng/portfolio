@@ -29,7 +29,13 @@
             </div>
             <div class="display-flex mt-2-neg">
               <a href="<%= project.github_link %>" target="_blank"><i class="fa-brands fa-github icone-size"></i></a>
-              <a href="<%= project.url_link %>" target="_blank"><i class="fa-solid fa-square-arrow-up-right icone-size"></i></a>
+
+            <% if project.url_link.present? && project.url_link != nil %>
+              <%= link_to project.url_link, target: "_blank" do %>
+                <i class="fa-solid fa-square-arrow-up-right icone-size"></i>
+              <% end %>
+            <% end %>
+
             </div>
           </div>
           </div>
@@ -59,6 +65,6 @@
 
   </div>
 
-  <div class="barre width-350"></div>
+  <div class="barre width-350 transform-l reveal-3"></div>
 
 </div>

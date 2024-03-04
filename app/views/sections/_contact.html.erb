@@ -26,8 +26,12 @@
 
   <div class="display-flex align-item-center mt-3 flex-column transformY reveal-3">
     <div>
-      <a href="https://github.com/carolinhng"><i class="fa-brands fa-github icone-style"></i></a>
-      <a href=""><i class="fa-brands fa-linkedin-in icone-style"></i></a>
+      <%= link_to "https://github.com/carolinhng", target: "_blank" do %>
+        <i class="fa-brands fa-github icone-style"></i>
+      <% end %>
+      <%= link_to "https://www.linkedin.com/in/caroline-nguyen-8a64aa158/", target: "_blank" do %>
+        <i class="fa-brands fa-linkedin-in icone-style"></i>
+      <% end %>
     </div>
     <%= mail_to "caroline.ng.pro@hotmail.com", class: "mail-to-style mt-3" %>
   </div>
