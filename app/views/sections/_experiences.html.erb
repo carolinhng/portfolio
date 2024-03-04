@@ -1,12 +1,12 @@
 <div class="background-white">
   <div class="container-section padding-90 color-black">
 
-    <div class="mb-5 pos-relative">
+    <div class="mb-5 pos-relative transformY reveal">
       <h2 class="mb-5 pos-relative z-index-2">Mes expériences</h2>
       <div class="barre-title z-index-1 size-barre position-barre-titre left-e width-e"></div>
     </div>
 
-    <div class="dis-flex"
+    <div class="dis-flex transformY reveal-2"
          id="experiences"
          data-controller="expechange"
          data-expechange-default-tab-value="<%=@experiences.first.id%>">
@@ -26,7 +26,7 @@
 
 
       <% @experiences.each do |experience| %>
-        <div id="<%=experience.id%>" data-expechange-target="panels">
+        <div id="<%=experience.id%>" data-expechange-target="panels" class="transformY reveal-3">
           <h3 class="mb-3 bold color-blue"><%= experience.post.capitalize %></h3>
             <h5 class="mb-3 color-bluegreen"><%= experience.start_date.strftime('%B %Y') %> - <%= experience.end_date.strftime('%B %Y') %></h5>
               <ul class="list">

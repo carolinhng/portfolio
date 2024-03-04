@@ -246,10 +246,18 @@ p {
 
 // Class pour le scroll
 
-.reveal {
+.reveal, [class*="reveal-"] {
   opacity: 0;
+}
+
+.transformY {
   transform: translateY(30px);
 }
+
+.transformX-r {
+  transform: translateX(-100%);
+}
+
 
 .reveal-visible {
   opacity: 1;
@@ -258,19 +266,33 @@ p {
 }
 
 .reveal-2 {
-  opacity: 0;
-  transform: translateY(30px);
-  transition-delay: 0.1s;
-}
-
-.reveal-3 {
-  opacity: 0;
-  transform: translateY(30px);
   transition-delay: 0.2s;
 }
 
-.reveal-4 {
-  opacity: 0;
-  transform: translateY(30px);
+.reveal-3 {
   transition-delay: 0.3s;
+}
+
+.reveal-4 {
+  transition-delay: 0.4s;
+}
+
+.reveal-5 {
+  transition-delay: 0.5s;
+}
+
+.reveal-6 {
+  transition-delay: 0.6s;
+}
+
+.reveal-7 {
+  transition-delay: 0.7s;
+}
+
+.reveal-8 {
+  transition-delay: 0.8s;
+}
+
+.reveal-9 {
+  transition-delay: 0.9s;
 }

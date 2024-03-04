@@ -18,6 +18,8 @@ const revealBehavior = (entries, observer) => {
 }
 
 const observer = new IntersectionObserver(revealBehavior, options);
-document.querySelectorAll('.reveal, [class^="reveal-"]').forEach((element) => {
+document.querySelectorAll('[class*="reveal"]').forEach((element) => {
   observer.observe(element);
 });
+
+console.log(document.querySelectorAll('[class*="reveal"]'));
