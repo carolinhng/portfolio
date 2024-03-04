@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'dashboards/index'
   devise_for :users
   root to: "pages#home"
   get 'download_pdf', to: "pages#download_pdf"
@@ -21,7 +22,7 @@ Rails.application.routes.draw do
 
   resources :dashboards, only: [:index]
 
-  resources :messages, only: [:index, :new, :create]
+  resources :messages, only: [:create]
 
 
 end

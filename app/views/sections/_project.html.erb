@@ -17,32 +17,34 @@
         <div class="img-project">
           <%= image_tag  "remadesyn.png"%>
           <div class="filter">
-
-          <%# visible en dessous de width: 800px %>
-          <div class="display-flex flex-column size-100-pourcent padding justify-content-center none">
-            <h3 class="bold color-bluegreen"><%= project.name %></h3>
-              <p class="color-white"><%= project.description %></p>
-            <div class="display-flex flex-wrap-wrap mb-3">
-              <% project.project_technos.each do |techno| %>
-                  <p class="pastille font-size-12 hover mb-2"><%= techno.techno.techno %></p>
+            <%# Mobile/tablet visible en dessous de width: 800px %>
+              <%= link_to project.url_link.present? ? project.url_link : project.github_link do %>
+                <div class="display-flex flex-column size-100-pourcent padding justify-content-center none">
+                  <h3 class="bold color-bluegreen"><%= project.name %></h3>
+                    <p class="color-white"><%= project.description %></p>
+                  <div class="display-flex flex-wrap-wrap mb-3">
+                    <% project.project_technos.each do |techno| %>
+                        <p class="pastille font-size-12 hover mb-2"><%= techno.techno.techno %></p>
+                    <% end %>
+                  </div>
+                  <div class="display-flex mt-2-neg">
+                    <%= link_to project.github_link, target: "_blank" do %>
+                      <i class="fa-brands fa-github icone-size"></i>
+                    <% end %>
+                    <% if project.url_link.present? %>
+                      <%= link_to project.url_link, target: "_blank" do %>
+                        <i class="fa-solid fa-square-arrow-up-right icone-size"></i>
+                      <% end %>
+                    <% end %>
+                  </div>
+                </div>
               <% end %>
-            </div>
-            <div class="display-flex mt-2-neg">
-              <a href="<%= project.github_link %>" target="_blank"><i class="fa-brands fa-github icone-size"></i></a>
-
-            <% if project.url_link.present? && project.url_link != nil %>
-              <%= link_to project.url_link, target: "_blank" do %>
-                <i class="fa-solid fa-square-arrow-up-right icone-size"></i>
-              <% end %>
-            <% end %>
-
-            </div>
-          </div>
           </div>
         </div>
 
-      <%# visible au dessus de width 800px %>
+      <%# Ordi visible au dessus de width 800px %>
       <%# block_right %>
+
         <div class="display-flex flex-column justify-content-center align-item-end absolute mobile-none transformY reveal-2">
           <h3 class="bold color-bluegreen"><%= project.name %></h3>
             <div class="rect-bleu">
@@ -53,13 +55,23 @@
                 <p class="pastille font-size-12 hover mb-2"><%= techno.techno.techno %></p>
             <% end %>
           </div>
+
           <div class="display-flex mt-2-neg">
-            <a href="<%= project.github_link %>" target="_blank"><i class="fa-brands fa-github icone-size"></i></a>
-            <a href="<%= project.url_link %>" target="_blank"><i class="fa-solid fa-square-arrow-up-right icone-size"></i></a>
+            <%= link_to project.github_link, target: "_blank" do %>
+              <i class="fa-brands fa-github icone-size"></i>
+            <% end %>
+            <% if project.url_link.present? %>
+              <%= link_to project.url_link, target: "_blank" do %>
+                <i class="fa-solid fa-square-arrow-up-right icone-size"></i>
+              <% end %>
+            <% end %>
           </div>
+
         </div>
 
+
       </div>
+
 
     <% end %>
 
