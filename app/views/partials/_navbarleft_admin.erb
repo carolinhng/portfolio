@@ -1,7 +1,7 @@
 <div class="background-green height-100vh width-20-pourcent position-fixed flex-column display-flex justify-space-around align-item-center">
 
   <div>
-    <%= link_to root_path do %>
+    <%= link_to edit_user_registration_path do %>
       <%= image_tag "caro.jpg", class: "avatar-grand" %>
       <p class="text-center mt-3 color-blue font-size-20 bold-600 hover-white">Profil</p>
     <% end %>
@@ -9,11 +9,11 @@
 
   <ul>
     <div class="flex-column display-flex align-item-center gap-20">
-      <li><%= link_to "Dashboard", , class: "color-white font-size-20 bold-600 hover-bleu" %></li>
-      <li><%= link_to "Expériences", {anchor: "experiences"}, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
-      <li><%= link_to "Compétences", {anchor: "competences"}, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
-      <li><%= link_to "Projets", {anchor: "projets"}, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
-      <li><%= link_to "Contact", {anchor: "contact"}, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
+      <li><%= link_to "Dashboard", dashboards_path, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
+      <li><%= link_to "Portfolio", root_path, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
+      <li><%= link_to "Expériences", experiences_path, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
+      <li><%= link_to "Projets", projects_path, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
+      <li><%= link_to "Messages", messages_path, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
     </div>
   </ul>
 

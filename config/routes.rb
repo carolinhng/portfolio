@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'dashboards/index'
   devise_for :users
   root to: "pages#home"
   get 'download_pdf', to: "pages#download_pdf"
@@ -12,17 +11,17 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  resources :projects, only: [:index, :new, :create, :edit, :update, :destroy] do
-    resources :technos, only: [:new, :create, :destroy]
+  resources :projects, only: [:index, :show, :new, :create, :edit, :update, :destroy] do
+    resources :project_technos, only: [:create]
   end
 
-  resources :experiences, only: [:index, :new, :create, :edit, :update, :destroy] do
-    resources :missions, only: [:new, :create, :update, :destroy]
+  resources :experiences, only: [:index, :show, :new, :create, :edit, :update, :destroy] do
+    resources :missions, only: [:create, :update]
   end
 
   resources :dashboards, only: [:index]
-
   resources :messages, only: [:index, :show, :create]
-
-
+  resources :project_technos, only: [:destroy]
+  resources :missions, only: [:destroy]
+  resources :technos, only: [:create]
 end
