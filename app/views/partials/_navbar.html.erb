@@ -16,8 +16,8 @@
             <li><%= link_to "Projets", {anchor: "projets"}, class:"margin-left link-nav reveal-5 transformY" %></li>
             <li><%= link_to "Contact", {anchor: "contact"}, class:"margin-left link-nav reveal-6 transformY" %></li>
             <% if user_signed_in? %>
-              <li><%= link_to "Profil", dashboards_path, class: "margin-left link-nav" %></li>
-              <li><%= link_to "Déconnexion", destroy_user_session_path, data: { turbo_method: :delete }, class: "margin-left link-nav"%></li>
+              <li><%= link_to "Dashboard", dashboards_path, class: "margin-left link-nav reveal-7 transformY" %></li>
+              <li><%= link_to "Déconnexion", destroy_user_session_path, data: { turbo_method: :delete }, class: "margin-left link-nav reveal-7 transformY"%></li>
             <% else %>
               <li><%= link_to "Connexion", new_user_session_path, class: "margin-left link-nav reveal-7 transformY"  %></li>
             <% end %>

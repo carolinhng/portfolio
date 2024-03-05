@@ -33,12 +33,27 @@ body {
   font-weight: 700;
 }
 
+.bold-600 {
+  font-weight: 600;
+}
+
+
 .none {
   display: none;
 }
 
 .hover:hover {
   background-color: $bleuvertfonce;
+  transition: 0.4s;
+}
+
+.hover-bleu:hover {
+  color: $bleumarine;
+  transition: 0.4s;
+}
+
+.hover-white:hover {
+  color: white;
   transition: 0.4s;
 }
 
@@ -101,6 +116,10 @@ body {
   justify-content: space-between;
 }
 
+.justify-space-around {
+  justify-content: space-around;
+}
+
 .align-item-end{
   align-items: flex-end;
 }
@@ -113,6 +132,7 @@ body {
 .align-item-center {
   align-items: center;
 }
+
 
 .flex-wrap-wrap {
   flex-wrap: wrap;
@@ -204,6 +224,10 @@ p {
   font-size: 14px;
 }
 
+.font-size-20 {
+  font-size: 20px;
+}
+
 
 // Grid ----------------------
 
@@ -217,6 +241,10 @@ p {
 
 .gap-50 {
   gap: 50px;
+}
+
+.gap-20 {
+  gap: 20px;
 }
 
 @media (max-width: 903px) {
@@ -238,7 +266,6 @@ p {
 .text-end {
   text-align: end;
 }
-
 
 
 // relative ------------

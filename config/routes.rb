@@ -17,12 +17,12 @@ Rails.application.routes.draw do
   end
 
   resources :experiences, only: [:index, :new, :create, :edit, :update, :destroy] do
-    resources :missions, only: [:new, :create, :destroy]
+    resources :missions, only: [:new, :create, :update, :destroy]
   end
 
   resources :dashboards, only: [:index]
 
-  resources :messages, only: [:create]
+  resources :messages, only: [:index, :show, :create]
 
 
 end
