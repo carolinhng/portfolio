@@ -1,25 +1,26 @@
-<div class="background-green height-100vh width-20-pourcent position-fixed flex-column display-flex justify-space-around align-item-center">
+<div class="width-20">
+  <div class="background-green height-100vh position-fixed width-20-pourcent flex-column display-flex justify-space-around align-item-center">
 
-  <div>
-    <%= link_to edit_user_registration_path do %>
-      <%= image_tag "caro.jpg", class: "avatar-grand" %>
-      <p class="text-center mt-3 color-blue font-size-20 bold-600 hover-white">Profil</p>
-    <% end %>
-  </div>
-
-  <ul>
-    <div class="flex-column display-flex align-item-center gap-20">
-      <li><%= link_to "Dashboard", dashboards_path, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
-      <li><%= link_to "Portfolio", root_path, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
-      <li><%= link_to "Expériences", experiences_path, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
-      <li><%= link_to "Projets", projects_path, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
-      <li><%= link_to "Messages", messages_path, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
+    <div>
+      <%= link_to edit_user_registration_path do %>
+        <%= image_tag "caro.jpg", class: "avatar-large-plus avatar-bordered-white" %>
+        <p class="text-center mt-3 color-blue font-size-20 bold-600 hover-white">Profil</p>
+      <% end %>
     </div>
-  </ul>
 
-  <div>
-    <%= link_to "Déconnexion", destroy_user_session_path, data: { turbo_method: :delete }, class: "hover-white bold-600 color-blue font-size-20" %>
+    <ul>
+      <div class="flex-column display-flex align-item-center gap-20">
+        <li><%= link_to "Dashboard", dashboards_path, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
+        <li><%= link_to "Portfolio", root_path, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
+        <li><%= link_to "Expériences", experiences_path, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
+        <li><%= link_to "Projets", projects_path, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
+        <li><%= link_to "Messages", messages_path, class: "color-white font-size-20 bold-600 hover-bleu" %></li>
+      </div>
+    </ul>
+
+    <div>
+      <%= link_to "Déconnexion", destroy_user_session_path, data: { turbo_method: :delete }, class: "hover-white bold-600 color-blue font-size-20" %>
+    </div>
+
   </div>
-
-
 </div>

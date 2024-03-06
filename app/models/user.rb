@@ -4,9 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
-  has_many :experiences
-  has_many :projects
-
   validates :linkedin_url, presence: true
   validates :github_user_url, presence: true
 

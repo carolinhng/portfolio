@@ -10,12 +10,12 @@
 
     <% @projects.each do |project| %>
 
-      <div class="display-flex align-item-center transformY reveal-2">
+      <div class="display-flex align-item-center transformY reveal-2 mt-4">
 
       <%# image %>
 
         <div class="img-project">
-          <%= image_tag  "remadesyn.png"%>
+          <%= image_tag(project.image)%>
           <div class="filter">
             <%# Mobile/tablet visible en dessous de width: 800px %>
               <%= link_to project.url_link.present? ? project.url_link : project.github_link do %>
