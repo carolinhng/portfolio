@@ -28,3 +28,9 @@
   z-index: 1;
 }
 
+@media (max-width: 720px) {
+  .barre.width-950.reveal.transformX-r {
+    width: 100vw;
+    transform: none;
+  }
+}
