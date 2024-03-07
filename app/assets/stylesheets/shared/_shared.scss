@@ -290,7 +290,30 @@ p {
 }
 
 .transform-l {
-  transform: translate(38%);
+  transform: translate(100%);
+}
+
+@media (max-width: 720px) {
+  .transform-l {
+    transform: translate(50%);
+  }
+}
+
+@media (max-width: 540px) {
+  .transform-l {
+    transform: translate(20%);
+  }
+}
+
+@media (max-width: 450px) {
+
+  .barre.width-350 {
+    width: 150px;
+  }
+
+  .transform-l {
+    transform: translate(137%);
+  }
 }
 
 
