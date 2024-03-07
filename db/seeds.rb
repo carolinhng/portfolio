@@ -7,7 +7,7 @@ Experience.destroy_all
 # Experience Teacher Assistante ----------------------------
 
 lewagon = Experience.create!(
-  company: "le Wagon",
+  company: "Wagon",
   post: "teacher Assistante",
   start_date: '01/02/2024',
   end_date: Date.today
@@ -97,7 +97,7 @@ Mission.create!(mission: "Community management.", experience: quintessence)
 # Experience aboral ----------------------------
 
 aboral = Experience.create!(
-  company: "ECP - aboral",
+  company: "Aboral",
   post: "Chargée de communication & commerciale",
   start_date: "01/10/2017",
   end_date: "01/07/2019"

@@ -1,11 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
-  # , skip: [:registrations]
-  # devise_scope :user do
-  #   get 'users/edit', to: 'devise/registrations#edit', as: 'edit_user_registration'
-  #   patch 'users', to: 'devise/registrations#update', as: 'user_registration'
-  # end
-
   root to: "pages#home"
   get 'download_pdf', to: "pages#download_pdf"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
