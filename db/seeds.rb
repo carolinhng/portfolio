@@ -119,6 +119,7 @@ js = Techno.create!(techno: "JS")
 wordpress = Techno.create!(techno: "Wordpress")
 woocommerce = Techno.create!(techno: "Woocommerce")
 figma = Techno.create!(techno: "figma")
+heroku = Techno.create!(techno: "heroku")
 
 
 # Projets portfolio ---------------------------------------------
@@ -140,6 +141,7 @@ ProjectTechno.create!(techno: bootstrap, project: portfolio)
 ProjectTechno.create!(techno: stimulus, project: portfolio)
 ProjectTechno.create!(techno: js, project: portfolio)
 ProjectTechno.create!(techno: figma, project: portfolio)
+ProjectTechno.create!(techno: heroku, project: portfolio)
 
 
 # Projets sportrack ---------------------------------------------

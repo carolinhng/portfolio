@@ -20,8 +20,8 @@
             <%# Mobile/tablet visible en dessous de width: 800px %>
               <%= link_to project.url_link.present? ? project.url_link : project.github_link do %>
                 <div class="display-flex flex-column size-100-pourcent padding justify-content-center none">
-                  <h3 class="bold color-bluegreen"><%= project.name %></h3>
-                    <p class="color-white"><%= project.description %></p>
+                  <h3 class="bold color-bluegreen mb-2"><%= project.name %></h3>
+                    <p class="color-white mb-3"><%= project.description %></p>
                   <div class="display-flex flex-wrap-wrap mb-3">
                     <% project.project_technos.each do |techno| %>
                         <p class="pastille font-size-12 hover mb-2"><%= techno.techno.techno %></p>
