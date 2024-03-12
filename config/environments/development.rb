@@ -2,10 +2,11 @@ require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
   # In the development environment your application's code is reloaded any time
   # it changes. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
+  config.cache_classes = false
+
   config.enable_reloading = true
 
   # Do not eager load code on boot.
@@ -75,18 +76,18 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   # Raise error when a before_action's only/except options reference missing actions
+
   config.action_controller.raise_on_missing_callback_actions = true
 
   # Configure mailer
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:              'smtp.live.com',
-    port:                 587,
-    domain:               'hotmail.com',
-    user_name:            ENV['HOTMAIL_EMAIL'],
-    password:             ENV['HOTMAIL_PASSWORD'],
-    authentication:       'login',
+    address: 'smtp.live.com',
+    port: 587,
+    domain: 'hotmail.com',
+    user_name: ENV['HOTMAIL_EMAIL'],
+    password: ENV['HOTMAIL_PASSWORD'],
+    authentication: 'login',
     enable_starttls_auto: true
   }
-
 end
