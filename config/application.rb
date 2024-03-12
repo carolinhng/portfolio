@@ -31,7 +31,10 @@ module Portfolio
     # config.time_zone = "Europe/Paris", "Paris"
 
     # config.eager_load_paths << Rails.root.join("extras")
-    
+
+    # Permet à Rails d'utiliser l'Asset Pipeline pour gérer et optimiser la livraison des assets statiques dans votre application.
+    config.assets.enabled = true
+
     # ajoute une localisation française
     # config.i18n.default_locale = :fr
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
