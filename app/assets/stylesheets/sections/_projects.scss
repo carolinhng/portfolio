@@ -2,7 +2,7 @@
   position: relative;
 
   img {
-    width: 550px;
+    width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 5px;
@@ -18,21 +18,21 @@
   position: relative;
 }
 
-.filter {
-  position: absolute;
-  background: #3dcab048;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  border-radius: 5px;
-  opacity: 0;
-  transition: 0.7s;
+// .filter {
+//   position: absolute;
+//   background: #523dca;
+//   width: 100%;
+//   height: 100%;
+//   top: 0px;
+//   left: 0px;
+//   border-radius: 5px;
+//   opacity: 1;
+//   transition: 0.7s;
 
-  &:hover {
-    opacity: 1;
-  }
-}
+//   &:hover {
+//     opacity: 0;
+//   }
+// }
 
 .rect-bleu {
   background-color: $bleumarine;
