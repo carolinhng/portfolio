@@ -126,8 +126,7 @@ heroku = Techno.create!(techno: "heroku")
 
 portfolio = Project.create!(
   name: "Portfolio",
-  description: "Le site web actuel que je continue à développer pour apporter des améliorations.
-  Futurs amélioration : partie admin, cloudinary, P5js...",
+  description: "Mon portfolio actuel construit avec le framework Ruby On Rails. Une partie admin est en cours de développement",
   url_link: "",
   github_link: "https://github.com/carolinhng/portfolio",
   image: 'portfolio.png'
