@@ -45,7 +45,7 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 # traduire en fr
-# gem 'rails-i18n'
+gem 'rails-i18n'
 
 gem "bootstrap", "~> 5.2"
 gem "autoprefixer-rails"

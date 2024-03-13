@@ -27,17 +27,18 @@ module Portfolio
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
     #
-    config.time_zone = "Central Time (US & Canada)"
+    # config.time_zone = "Central Time (US & Canada)"
     # config.time_zone = "Europe/Paris", "Paris"
 
     # config.eager_load_paths << Rails.root.join("extras")
 
     # Permet à Rails d'utiliser l'Asset Pipeline pour gérer et optimiser la livraison des assets statiques dans votre application.
-    config.assets.enabled = true
+    # config.assets.enabled = true
+    # config.cache_classes = false
 
-    # ajoute une localisation française
+    # # ajoute une localisation française
     # config.i18n.default_locale = :fr
-    # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
-    # config.i18n.default_locale = :fr
+    config.i18n.available_locales = %i[en fr]
+    config.i18n.default_locale = :fr
   end
 end

@@ -28,7 +28,7 @@
       <% @experiences.each do |experience| %>
         <div id="<%=experience.id%>" data-expechange-target="panels" class="transformY reveal-3">
           <h3 class="mb-3 bold color-blue"><%= experience.post.capitalize %></h3>
-            <h5 class="mb-3 color-bluegreen"><%= experience.start_date.strftime('%B %Y') %> - <%= experience.end_date.strftime('%B %Y') %></h5>
+            <h5 class="mb-3 color-bluegreen"><%= t experience.start_date.strftime('%B') %> <%= experience.start_date.strftime('%Y') %> - <%= t experience.end_date.strftime('%B') %> <%= experience.end_date.strftime('%Y') %></h5>
               <ul class="list">
                 <% experience.missions.each do |mission| %>
 
