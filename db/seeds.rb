@@ -98,7 +98,7 @@ Mission.create!(mission: "Community management.", experience: quintessence)
 
 aboral = Experience.create!(
   company: "Aboral",
-  post: "Chargée de communication & commerciale",
+  post: "Commerciale junior",
   start_date: "01/10/2017",
   end_date: "01/07/2019"
 )
