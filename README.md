@@ -1,1 +1,5 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+# Portfolio
+
+My portfolio was developed with the Ruby On rails and StomulusJS framework and Vanilla Javascript. The site has been put into production on Heroku.
+
+Visit my portfolio : https://www.caroline-nguyen.site/
