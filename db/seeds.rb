@@ -118,8 +118,10 @@ stimulus = Techno.create!(techno: "StimulusJS")
 js = Techno.create!(techno: "JS")
 wordpress = Techno.create!(techno: "Wordpress")
 woocommerce = Techno.create!(techno: "Woocommerce")
-figma = Techno.create!(techno: "figma")
-heroku = Techno.create!(techno: "heroku")
+figma = Techno.create!(techno: "Figma")
+heroku = Techno.create!(techno: "Heroku")
+mapbox = Techno.create!(techno: "Mapbox")
+pgsearch = Techno.create!(techno: "PgSearch")
 
 
 # Projets portfolio ---------------------------------------------
@@ -127,7 +129,7 @@ heroku = Techno.create!(techno: "heroku")
 portfolio = Project.create!(
   name: "Portfolio",
   description: "Mon portfolio actuel construit avec le framework Ruby On Rails. Une partie admin est en cours de développement",
-  url_link: "",
+  url_link: "https://www.caroline-nguyen.site/",
   github_link: "https://github.com/carolinhng/portfolio",
   image: 'portfolio.png'
 )
@@ -180,6 +182,8 @@ ProjectTechno.create!(techno: html, project: jouons)
 ProjectTechno.create!(techno: scss, project: jouons)
 ProjectTechno.create!(techno: bootstrap, project: jouons)
 ProjectTechno.create!(techno: stimulus, project: jouons)
+ProjectTechno.create!(techno: mapbox, project: jouons)
+ProjectTechno.create!(techno: pgsearch, project: jouons)
 
 # Projets bookroom ---------------------------------------------
 

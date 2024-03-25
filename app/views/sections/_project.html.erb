@@ -1,24 +1,23 @@
 <div class="background-white">
   <div class="container-section padding-70 color-black">
 
-  <div class="display-flex justify-content-center transformY reveal">
-    <div class="mb-5 pos-relative">
-      <h2 class="pos-relative z-index-2 color-black" id="projets">Mes projets</h2>
-      <div class="barre-title z-index-1 size-barre position-barre-titre width-p left-p"></div>
+    <div class="display-flex justify-content-center transformY reveal">
+      <div class="mb-5 pos-relative">
+        <h2 class="pos-relative z-index-2 color-black" id="projets">Mes projets</h2>
+        <div class="barre-title z-index-1 size-barre position-barre-titre width-p left-p"></div>
+      </div>
     </div>
-  </div>
 
     <% @projects.each do |project| %>
-
       <div class="display-flex align-item-center transformY reveal-2 mt-4">
-
       <%# image %>
 
-      <%= link_to project.url_link.present? ? project.url_link : project.github_link do %>
         <div class="img-project">
           <%= image_tag(project.image)%>
             <div class="filter">
+
             <%# Mobile/tablet visible en dessous de width: 800px %>
+              <%= link_to project.url_link.present? ? project.url_link : project.github_link, target: "_blank" do %>
                 <div class="display-flex flex-column size-100-pourcent padding justify-content-center none">
                   <h3 class="bold color-bluegreen mb-2"><%= project.name %></h3>
                     <p class="color-white mb-3"><%= project.description %></p>
@@ -38,15 +37,18 @@
                     <% end %>
                   </div>
                 </div>
+              <% end %>
             </div>
         </div>
-      <% end %>
+
 
       <%# Ordi visible au dessus de width 800px %>
       <%# block_right %>
 
+      <%= link_to project.url_link.present? ? project.url_link : project.github_link, target: "_blank" do %>
+
         <div class="display-flex flex-column justify-content-center align-item-end absolute mobile-none transformY reveal-2">
-          <h3 class="bold color-bluegreen"><%= project.name %></h3>
+          <h3 class="bold color-bluegreen text-end"><%= project.name %></h3>
             <div class="rect-bleu">
               <p><%= project.description %></p>
             </div>
@@ -66,11 +68,11 @@
               <% end %>
             <% end %>
           </div>
-
         </div>
 
-
+      <% end %>
       </div>
+
 
 
     <% end %>
@@ -80,3 +82,7 @@
   <div class="barre width-350 transform-l reveal-3"></div>
 
 </div>
+
+
+
+<%# <%= link_to project.url_link.present? ? project.url_link : project.github_link, target: "_blank" do %>
